@@ -1,0 +1,11 @@
+1) Learned on 64 bit occupy & mask => 64 x 64 x 1 [per output bit]
+	It learned to calculate which bits in the output need to be set for all 4096 possible configurations per square
+
+2) Learned on 16 bit pext => 16 x 32 x 1 [per output bit]
+	It learned to calculate the correct translation between a gathered bitmask and the input for the scatter operation
+
+3) Is it possible to create one network for one square? 
+	Not with the current learning technique (too slow). But it should be a a lot faster and smaller. 
+
+4) Is it possible to create one network for all 64 squares?
+	No because you need to test every possible occupancy to verify a 100% score. 
