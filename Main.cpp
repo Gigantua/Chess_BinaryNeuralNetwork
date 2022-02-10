@@ -8,8 +8,8 @@ int main() {
 	//Learns on 16 bit pext => 16 x 32 x 1 [per output bit]
 	BNN::FindSolutionPEXT();
 
-	std::cout << "Press any key to verify solution!";
-	std::getchar();
+	std::cout << "Copy paste the emitted code - recompile and press any key to verify solution!";
+	std::ignore = std::getchar();
 
 	BNN::CompareSolution();
 }

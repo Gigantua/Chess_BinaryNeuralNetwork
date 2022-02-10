@@ -448,9 +448,9 @@ namespace BNN
 			uint64_t occ = rnd(); n++;
 			int sq = rnd() % 64;
 			auto start = std::chrono::high_resolution_clock::now();
-			uint64_t atk = NetworkData::Queen(sq, occ);
+			uint64_t atk = NetworkData::Rook(sq, occ);
 			auto t0 = std::chrono::high_resolution_clock::now();
-			uint64_t ref = Lookup_Ref::queenAttacks(sq, occ);
+			uint64_t ref = Lookup_Ref::rookAttacks(sq, occ);
 			auto end = std::chrono::high_resolution_clock::now();
 			volNew ^= atk; volRef ^= ref;
 
