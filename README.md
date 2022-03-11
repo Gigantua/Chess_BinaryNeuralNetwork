@@ -1,9 +1,15 @@
 # Chess_BinaryNeuralNetwork
 ## Training and Code Emitting Library for Binary Neural Networks
 
+
+This is the worlds first fully neural network Chess Movegenerator for pieces like the rook and the bishop and the queen. 
+Normally this is solved with hashing or direct calculation - but this repo is the first inference solver. 
+
+
 Sample code can infer 52Million Queen Moves/s on a random board. 
 Implemented layouts are 64x64x1
 or 16x32x1
+
 
 ### Getting Started
 
